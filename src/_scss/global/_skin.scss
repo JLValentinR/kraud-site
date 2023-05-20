@@ -1,0 +1,88 @@
+// Global skin
+body {
+    font-family: $primary-font-family;
+    background: #fafafa;
+}
+
+p {
+    font-family: $primary-font-family;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: $color-white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.title-section {
+  font-family: $primary-font-family;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: $secondary-purple-color;
+  opacity: 1;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-color: #F9F9F9 !important;
+  margin-left: 200px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+
+td {
+  &.rejected {
+    color: $color-danger;
+    font-weight: 600;
+  }
+  &.accepted {
+    color: $color-success;
+    font-weight: 600;
+  }
+  &.pending {
+    color: $color-warning;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,19 @@
+// Main file to load SASS modules
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap-custom';
+
+// Global
+@import 'global/skin';
+@import "global/sidebar-wrapper";
+
+// Lista de paquetes home
+@import 'home/_skin.scss';
+@import 'home/_skeleton.scss';
+
+// Resolutions
+@import 'resolutions/_skin.scss';
+@import 'resolutions/_skeleton.scss';

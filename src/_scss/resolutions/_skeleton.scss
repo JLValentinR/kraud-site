@@ -1,0 +1,693 @@
+.header-social-media, .header-header-info {
+  display: block;
+}
+
+.header-back-movil{
+  display: none;
+}
+
+.home-not-padding{
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.home-card-responsive{
+  width: 50%;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+.home-collection-card{
+  width: 31% !important;
+}
+
+.home-show-nft-version-one{
+  display: block;
+}
+
+.home-show-nft-version-two{
+  display: none;
+}
+
+.show-lives{
+  display: block;
+}
+
+.show-lives-horizontal{
+  display: none;
+}
+
+.footer-16{
+  width: 16%;
+}
+
+.footer-25{
+  width: 25%;
+  padding: 15px !important;
+}
+
+@media (max-width: 575.98px) {
+  .resolutions-list{
+    width: 100%;
+  }
+  .header-social-media, .header-header-info {
+    display: none;
+  }
+  .header-back-movil{
+    display: block;
+  }
+  .home-not-padding{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-carousel-one{
+    font: normal normal 400 48px $merriweather-font-family;
+  }
+  .header-carousel-bottom{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-responsive{
+    width: 100%;
+    padding: 0px;
+  }
+  .home-90{
+    width: 100% !important;
+  }
+  .home-card-title{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-subtitle{
+    font: normal normal 400 18px $merriweather-font-family;
+    margin-top: 10px;
+  }
+  .home-cards-back-one{
+    height: 204px;
+  }
+  .home-cards-back-two{
+    height: 274px !important;
+  }
+  .home-collection-line, .home-nft-text{
+    display: none;
+  }
+  .home-collection{
+    position: relative !important;
+    font: normal normal 400 28px $merriweather-font-family;
+    width: 100%;
+    text-align: center;
+  }
+  .home-collection-card{
+    width: 44% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .home-collection-card3{
+    width: 55% !important;
+  }
+  .home-collection-card-text1, .home-collection-card-text2, .home-collection-card-text3, .home-collection-card-text4{
+    font-size: 12px;
+  }
+  .home-show-img{
+    display: none;
+  }
+  .home-collection-card-text3{
+    margin: 0px !important; 
+  }
+  .home-collection-card-text5{
+    font-size: 14px;
+  }
+  .home-collection-card{
+    height: 390px;
+  }
+  .home-collection-card-img{
+    height: 152px;
+  }
+  .home-show-nft-version-one{
+    display: none;
+  }
+  .home-show-nft-version-two{
+    display: block;
+  }
+  .home-creator-nft-text{
+    font-size: 40px;
+    width: 80% !important;
+  }
+  .home-collection-card-more{
+    font-size: 14px;
+  }
+  .home-collection-card-img2{
+    width: 100%;
+  }
+  .show-lives{
+    display: none;
+  }
+  .show-lives-horizontal{
+    display: block;
+  }
+  .footer-16{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-25{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-text-one{
+    margin: 0px !important;
+    font-size: 18px !important;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+  .footer-text-two{
+    font-size: 16px !important;
+  }
+  .header-back-menu-movil{
+    width: 80% !important;
+  }
+  .header-input-search2{
+    font-size: 12px !important;
+  }
+  .home-border-radius-slider{
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .resolutions-list{
+    width: 100%;
+  }
+  .header-social-media, .header-header-info {
+    display: none;
+  }
+  .header-back-movil{
+    display: block;
+  }
+  .home-not-padding{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-carousel-one{
+    font: normal normal 400 48px $merriweather-font-family;
+  }
+  .header-carousel-bottom{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-responsive{
+    width: 100%;
+    padding: 0px;
+  }
+  .home-90{
+    width: 100% !important;
+  }
+  .home-card-title{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-subtitle{
+    font: normal normal 400 18px $merriweather-font-family;
+    margin-top: 10px;
+  }
+  .home-cards-back-one{
+    height: 204px;
+  }
+  .home-cards-back-two{
+    height: 274px !important;
+  }
+  .home-collection-line, .home-nft-text{
+    display: none;
+  }
+  .home-collection{
+    position: relative !important;
+    font: normal normal 400 28px $merriweather-font-family;
+    width: 100%;
+    text-align: center;
+  }
+  .home-collection-card{
+    width: 44% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .home-collection-card3{
+    width: 55% !important;
+  }
+  .home-collection-card-text1, .home-collection-card-text2, .home-collection-card-text3, .home-collection-card-text4{
+    font-size: 12px;
+  }
+  .home-show-img{
+    display: none;
+  }
+  .home-collection-card-text3{
+    margin: 0px !important; 
+  }
+  .home-collection-card-text5{
+    font-size: 14px;
+  }
+  .home-collection-card{
+    height: 390px;
+  }
+  .home-collection-card-img{
+    height: 152px;
+  }
+  .home-show-nft-version-one{
+    display: none;
+  }
+  .home-show-nft-version-two{
+    display: block;
+  }
+  .home-creator-nft-text{
+    font-size: 40px;
+    width: 80% !important;
+  }
+  .home-collection-card-more{
+    font-size: 14px;
+  }
+  .home-collection-card-img2{
+    height: 330px;
+  }
+  .show-lives{
+    display: none;
+  }
+  .show-lives-horizontal{
+    display: block;
+  }
+  .home-nft-what{
+    font-size: 16px;
+  }
+  .footer-16{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-25{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-text-one{
+    margin: 0px !important;
+    font-size: 18px !important;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+  .footer-text-two{
+    font-size: 16px !important;
+  }
+  .header-back-menu-movil{
+    width: 60%;
+  }
+  .header-input-search2{
+    font-size: 12px !important;
+  }
+  .home-border-radius-slider{
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .resolutions-list{
+    width: 100%;
+  }
+  .header-social-media, .header-header-info {
+    display: none;
+  }
+  .header-back-movil{
+    display: block;
+  }
+  .home-not-padding{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-carousel-one{
+    font: normal normal 400 48px $merriweather-font-family;
+  }
+  .header-carousel-bottom{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-responsive{
+    width: 100%;
+    padding: 0px;
+  }
+  .home-90{
+    width: 100% !important;
+  }
+  .home-card-title{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-subtitle{
+    font: normal normal 400 18px $merriweather-font-family;
+    margin-top: 10px;
+  }
+  .home-cards-back-one{
+    height: 204px;
+  }
+  .home-cards-back-two{
+    height: 274px !important;
+  }
+  .home-collection-line, .home-nft-text{
+    display: none;
+  }
+  .home-collection{
+    position: relative !important;
+    font: normal normal 400 28px $merriweather-font-family;
+    width: 100%;
+    text-align: center;
+  }
+  .home-collection-card{
+    width: 44% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .home-collection-card3{
+    width: 55% !important;
+  }
+  .home-collection-card-text1, .home-collection-card-text2, .home-collection-card-text3, .home-collection-card-text4{
+    font-size: 12px;
+  }
+  .home-show-img{
+    display: none;
+  }
+  .home-collection-card-text3{
+    margin: 0px !important; 
+  }
+  .home-collection-card-text5{
+    font-size: 14px;
+  }
+  .home-collection-card{
+    height: 390px;
+  }
+  .home-collection-card-img{
+    height: 152px;
+  }
+  .home-show-nft-version-one{
+    display: none;
+  }
+  .home-show-nft-version-two{
+    display: block;
+  }
+  .home-creator-nft-text{
+    font-size: 40px;
+    width: 80% !important;
+  }
+  .home-collection-card-more{
+    font-size: 14px;
+  }
+  .home-collection-card-img2{
+    height: 330px;
+  }
+  .show-lives{
+    display: none;
+  }
+  .show-lives-horizontal{
+    display: block;
+  }
+  .footer-16{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-25{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-text-one{
+    margin: 0px !important;
+    font-size: 18px !important;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+  .footer-text-two{
+    font-size: 16px !important;
+  }
+  .header-back-menu-movil{
+    width: 60%;
+  }
+  .header-input-search2{
+    font-size: 12px !important;
+  }
+  .home-border-radius-slider{
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .resolutions-list{
+    width: 90%;
+  }
+  .header-social-media, .header-header-info {
+    display: none;
+  }
+  .header-back-movil{
+    display: block;
+  }
+  .home-not-padding{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-carousel-one{
+    font: normal normal 400 48px $merriweather-font-family;
+  }
+  .header-carousel-bottom{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-responsive{
+    width: 100%;
+    padding: 0px;
+  }
+  .home-90{
+    width: 100% !important;
+  }
+  .home-card-title{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-subtitle{
+    font: normal normal 400 18px $merriweather-font-family;
+    margin-top: 10px;
+  }
+  .home-cards-back-one{
+    height: 204px;
+  }
+  .home-cards-back-two{
+    height: 274px !important;
+  }
+  .home-collection-line, .home-nft-text{
+    display: none;
+  }
+  .home-collection{
+    position: relative !important;
+    font: normal normal 400 28px $merriweather-font-family;
+    width: 100%;
+    text-align: center;
+  }
+  .home-collection-card{
+    width: 44% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .home-collection-card3{
+    width: 55% !important;
+  }
+  .home-collection-card-text1, .home-collection-card-text2, .home-collection-card-text3, .home-collection-card-text4{
+    font-size: 12px;
+  }
+  .home-show-img{
+    display: none;
+  }
+  .home-collection-card-text3{
+    margin: 0px !important; 
+  }
+  .home-collection-card-text5{
+    font-size: 14px;
+  }
+  .home-collection-card{
+    height: 390px;
+  }
+  .home-collection-card-img{
+    height: 152px;
+  }
+  .home-show-nft-version-one{
+    display: none;
+  }
+  .home-show-nft-version-two{
+    display: block;
+  }
+  .home-creator-nft-text{
+    font-size: 40px;
+    width: 80% !important;
+  }
+  .home-collection-card-more{
+    font-size: 14px;
+  }
+  .home-collection-card-img2{
+    height: 330px;
+  }
+  .show-lives{
+    display: none;
+  }
+  .show-lives-horizontal{
+    display: block;
+  }
+  .footer-16{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-25{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-text-one{
+    margin: 0px !important;
+    font-size: 18px !important;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+  .footer-text-two{
+    font-size: 16px !important;
+  }
+  .header-back-menu-movil{
+    width: 60%;
+  }
+  .header-input-search2{
+    font-size: 12px !important;
+  }
+  .home-border-radius-slider{
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .home-collection-card-more {
+    padding: 5px 0px !important;
+    font-size: 14px;
+  }
+  .header-menu-login{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .header-menu-desktop{
+    margin-top: 10px;
+  }
+  .header-menu-desktop li{
+    font-size: 14px;
+  }
+  /* .resolutions-list{
+    width: 90%;
+  }
+  .header-social-media, .header-header-info {
+    display: none;
+  }
+  .header-back-movil{
+    display: block;
+  }
+  .home-not-padding{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-carousel-one{
+    font: normal normal 400 48px $merriweather-font-family;
+  }
+  .header-carousel-bottom{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-responsive{
+    padding: 0px;
+  }
+  .home-90{
+    width: 100% !important;
+  }
+  .home-card-title{
+    font: normal normal 600 16px $cairo-font-family;
+  }
+  .home-card-subtitle{
+    font: normal normal 400 18px $merriweather-font-family;
+    margin-top: 10px;
+  }
+  .home-cards-back-one{
+    height: 204px;
+  }
+  .home-cards-back-two{
+    height: 274px !important;
+  }
+  .home-collection-line, .home-nft-text{
+    display: none;
+  }
+  .home-collection{
+    position: relative !important;
+    font: normal normal 400 28px $merriweather-font-family;
+    width: 100%;
+    text-align: center;
+  }
+  .home-collection-card{
+    width: 44% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .home-collection-card3{
+    width: 55% !important;
+  }
+  .home-collection-card-text1, .home-collection-card-text2, .home-collection-card-text3, .home-collection-card-text4{
+    font-size: 12px;
+  }
+  .home-show-img{
+    display: none;
+  }
+  .home-collection-card-text3{
+    margin: 0px !important; 
+  }
+  .home-collection-card-text5{
+    font-size: 14px;
+  }
+  .home-collection-card{
+    height: 390px;
+  }
+  .home-collection-card-img{
+    height: 182px;
+  }
+  .home-show-nft-version-one{
+    display: none;
+  }
+  .home-show-nft-version-two{
+    display: block;
+  }
+  .home-creator-nft-text{
+    font-size: 40px;
+    width: 80% !important;
+  }
+  .home-collection-card-more{
+    font-size: 14px;
+  }
+  .home-collection-card-img2{
+    height: 460px;
+  }
+  .show-lives{
+    display: none;
+  }
+  .show-lives-horizontal{
+    display: block;
+  }
+  .footer-16{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-25{
+    width: 100%;
+    padding: 15px !important;
+  }
+  .footer-text-one{
+    margin: 0px !important;
+    font-size: 18px !important;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+  .footer-text-two{
+    font-size: 16px !important;
+  }
+  .header-back-menu-movil{
+    width: 50%;
+  }
+  .header-input-search2{
+    font-size: 12px !important;
+  }
+  .home-border-radius-slider{
+    border-radius: 0px;
+  } */
+}
