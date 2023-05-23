@@ -1,0 +1,33 @@
+.header-container{
+    width: 100%;
+    height: 80px;
+    background: rgba(18, 4, 39, 1);
+    backdrop-filter: blur(4px);
+    padding: 0px 60px;
+}
+
+.header-container-height{
+    height: 80px;
+}
+
+.header-back-ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+.header-back-ul li{
+    height: 40px;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    color: #9AEEC5;
+    padding: 0px 16px;
+}
+
+.header-back-ul li:hover{
+    background: #FFFFFF;
+    border-radius: 30px;
+    color: #270F4D;
+}
