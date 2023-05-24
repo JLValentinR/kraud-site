@@ -135,6 +135,118 @@
             </div>
           </div>
         </div>
+        <div class="row m-0 justify-content-center mt-5">
+          <div class="home-container-industriales">
+            <div class="home-industriales-title mb-3 text-center">Adquiere tu token</div>
+            <div class="card-body">
+              <section class="carousel">
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                    </div>
+                    <div class="pl-2 pr-2 mt-3">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                    </div>
+                    <div class="pl-2 pr-2 mt-3">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                    </div>
+                    <div class="pl-2 pr-2 mt-3">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                    </div>
+                    <div class="pl-2 pr-2 mt-3">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                    </div>
+                    <div class="pl-2 pr-2 mt-3">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="row m-0 justify-content-center global-width-100">
+              <button class="home-carrusel-button mt-0">Ver propiedades</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </home-layout>
@@ -153,6 +265,9 @@ import ImgBackIndustriales from '@/assets/home/img-back-industriales.jpg'
 import ImgIndustriales1 from '@/assets/home/img-industriales1.png'
 import ImgIndustriales2 from '@/assets/home/img-industriales2.png'
 import ImgIndustriales3 from '@/assets/home/img-industriales3.png'
+import ImgSmall01 from '@/assets/home/img-011.jpg'
+import ImgSmall02 from '@/assets/home/img-071.jpg'
+import ImgSmall03 from '@/assets/home/img-021.jpg'
 
 export default {
   name: 'Home',
@@ -170,7 +285,10 @@ export default {
       ImgBackIndustriales: ImgBackIndustriales,
       ImgIndustriales1: ImgIndustriales1,
       ImgIndustriales2: ImgIndustriales2,
-      ImgIndustriales3: ImgIndustriales3
+      ImgIndustriales3: ImgIndustriales3,
+      ImgSmall01: ImgSmall01,
+      ImgSmall02: ImgSmall02,
+      ImgSmall03: ImgSmall03
     }
   },
   methods: {
@@ -215,6 +333,33 @@ export default {
   }
   ,
   created () {
+    $(document).on('ready', function() {
+      $('.carousel').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+      });
+    });
   },
   mounted () {
     this.carrusel()
