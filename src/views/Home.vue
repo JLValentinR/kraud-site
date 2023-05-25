@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="row m-0 justify-content-center">
+        <div class="row m-0 justify-content-center" style="background-color: #F5FBFF;">
           <div class="home-container-industriales">
             <div class="home-industriales-title mb-3">Inversión segura en desarrollos <br /> industriales sustentables</div>
             <div class="position-relative">
@@ -135,9 +135,10 @@
             </div>
           </div>
         </div>
-        <div class="row m-0 justify-content-center mt-5">
+        <div class="row m-0 justify-content-center pt-5" style="background-color: #F5FBFF;">
           <div class="home-container-industriales">
             <div class="home-industriales-title mb-3 text-center">Adquiere tu token</div>
+            <img data-gifffer="https://i.pinimg.com/originals/9e/89/be/9e89be7c6a1ea7c56321bb3913272d12.gif" data-gifffer-duration="4000" data-gifffer-width="250" data-gifffer-height="237" />
             <div class="card-body">
               <section class="carousel">
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
@@ -247,7 +248,70 @@
             </div>
           </div>
         </div>
+        <div class="row m-0 justify-content-center home-center-aprendizaje">
+          <div class="home-center-container p-3">
+            <div class="global-width-100" style="height: 50px;">
+              <div class="float-left home-aprendizaje-title">Centro de aprendizaje</div>
+              <div class="float-right">
+                <img :src="ImgVector" alt="" />
+              </div>
+            </div>
+            <div class="home-line-white"></div>
+            <div class="row m-0">
+              <div class="home-center-col">
+                <div class="position-relative p-3">
+                  <img :src="ImgNaves1" width="100%" alt="" />
+                  <div class="row m-0 align-items-end home-aprendizaje-card-absolute pb-4 pl-2 pr-2">
+                    <div class="home-aprendizaje-inversiones">Inversiones</div>
+                  </div>
+                </div>
+                <div class="home-aprendizaje-title p-3">Como funciona Kraud para inversionistas</div>
+              </div>
+              <div class="home-center-col">
+                <div class="position-relative p-3">
+                  <img :src="Img02" width="100%" alt="" />
+                  <div class="row m-0 align-items-end home-aprendizaje-card-absolute pb-4 pl-2 pr-2">
+                    <div class="home-aprendizaje-inversiones">Inversiones</div>
+                  </div>
+                </div>
+                <div class="home-aprendizaje-title p-3">¿Cómo funciona los impuestos?</div>
+              </div>
+              <div class="home-center-col">
+                <div class="position-relative p-3">
+                  <img :src="Img01" width="100%" alt="" />
+                  <div class="row m-0 align-items-end home-aprendizaje-card-absolute pb-4 pl-2 pr-2">
+                    <div class="home-aprendizaje-inversiones">Inversiones</div>
+                  </div>
+                </div>
+                <div class="home-aprendizaje-title p-3">¿Qué son los bienes raíces fraccionados?</div>
+              </div>
+              <div class="home-center-col">
+                <div class="position-relative p-3">
+                  <img :src="ImgNaves1" width="100%" alt="" />
+                  <div class="row m-0 align-items-end home-aprendizaje-card-absolute pb-4 pl-2 pr-2">
+                    <div class="home-aprendizaje-inversiones">Inversiones</div>
+                  </div>
+                </div>
+                <div class="home-aprendizaje-title p-3">¿Cómo comprar propiedades en Kraud?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative row m-0 align-items-center justify-content-center home-width-start pb-5" :style="'background: url(' + ImgNaves + ') center center/cover no-repeat #204B65;'">
+          <div class="home-width-start-absolute row m-0">
+            <div class="global-width-100 pt-5 pb-5">
+              <img id="valueGraph" :src="Animation1" width="100%" style="max-height: 550px;" alt="" />
+            </div>
+          </div>
+          <div class="position-relative" style="height: auto;">
+            <div class="home-start-text-title text-center">¿Listo para <br /> comenzar?</div>
+            <div class="row m-0 justify-content-center global-width-100 mt-5 pt-5">
+              <button class="home-carrusel-button mt-5">Comienza a invertir</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer-info></footer-info>
     </div>
   </home-layout>
 </template>
@@ -255,6 +319,7 @@
 <script>
 import HomeLayout from '@/layouts/HomeLayout'
 import HeaderInfo from '@/components/HeaderInfo'
+import FooterInfo from '@/components/FooterInfo'
 import ImgKraudLogo from '@/assets/header/logo_kraud.svg'
 import SliderImg1 from '@/assets/home/sliderimg1.jpg'
 import SliderImg2 from '@/assets/home/sliderimg2.jpg'
@@ -268,6 +333,17 @@ import ImgIndustriales3 from '@/assets/home/img-industriales3.png'
 import ImgSmall01 from '@/assets/home/img-011.jpg'
 import ImgSmall02 from '@/assets/home/img-071.jpg'
 import ImgSmall03 from '@/assets/home/img-021.jpg'
+import ImgVector from '@/assets/home/Vector10.png'
+import ImgNaves1 from '@/assets/home/naves-industriales-mexico1.jpg'
+import Img01 from '@/assets/home/image1.jpg'
+import Img02 from '@/assets/home/image2.jpg'
+import AnimationHart from '@/assets/home/Animationchart.svg'
+import ImgNaves from '@/assets/home/naves-industriales-mexico2.jpg'
+import Animation1 from '@/assets/home/animation1.png'
+import Animation2 from '@/assets/home/animation2.png'
+import Animation3 from '@/assets/home/animation3.png'
+import Animation4 from '@/assets/home/animation4.png'
+import Animation5 from '@/assets/home/animation5.png'
 
 export default {
   name: 'Home',
@@ -288,10 +364,44 @@ export default {
       ImgIndustriales3: ImgIndustriales3,
       ImgSmall01: ImgSmall01,
       ImgSmall02: ImgSmall02,
-      ImgSmall03: ImgSmall03
+      ImgSmall03: ImgSmall03,
+      ImgVector: ImgVector,
+      ImgNaves1: ImgNaves1,
+      Img01: Img01,
+      Img02: Img02,
+      AnimationHart: AnimationHart,
+      ImgNaves: ImgNaves,
+      Animation1: Animation1,
+      Animation2: Animation2,
+      Animation3: Animation3,
+      Animation4: Animation4,
+      Animation5: Animation5,
+      temporizadorDato: '',
+      counterGraph: 1
     }
   },
   methods: {
+    comenzarTemporizador () {
+      const vm = this
+      this.temporizadorDato = setInterval(function () {
+        if (vm.counterGraph === 5) {
+          vm.counterGraph = 1
+        } else {
+          vm.counterGraph = vm.counterGraph + 1
+        }
+        if (vm.counterGraph === 1) {
+          getId('valueGraph').src = vm.Animation1
+        } else if (vm.counterGraph === 2) {
+          getId('valueGraph').src = vm.Animation2
+        } else if (vm.counterGraph === 3) {
+          getId('valueGraph').src = vm.Animation3
+        } else if (vm.counterGraph === 4) {
+          getId('valueGraph').src = vm.Animation4
+        } else if (vm.counterGraph === 5) {
+          getId('valueGraph').src = vm.Animation5
+        }
+      }, 1000)
+    },
     carruselSelect (value) {
       this.numberCounter = value
       getId('imgCarrusel').setAttribute('class', 'dropdown4')
@@ -336,15 +446,20 @@ export default {
     $(document).on('ready', function() {
       $('.carousel').slick({
           centerMode: true,
-          centerPadding: '60px',
           slidesToShow: 3,
+          slidesToScroll: 2,
+          arrows: true,
+          dots: false,
+          speed: 300,
+          infinite: true,
+          autoplaySpeed: 3000,
+          autoplay: true,
           responsive: [
             {
               breakpoint: 768,
               settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 3
               }
             },
@@ -353,20 +468,22 @@ export default {
               settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 1
               }
             }
           ]
       });
     });
+    Gifffer();
   },
   mounted () {
     this.carrusel()
+    this.comenzarTemporizador()
   },
   components: {
     HomeLayout,
-    HeaderInfo
+    HeaderInfo,
+    FooterInfo
   }
 }
 </script>

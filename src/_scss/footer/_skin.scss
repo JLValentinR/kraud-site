@@ -1,0 +1,41 @@
+.footer-container{
+    width: 100%;
+    height: 300px;
+    background-color: #120427;
+    padding: 0px 60px;
+}
+
+.footer-container-cards{
+    width: 100%;
+}
+
+.footer-container-card-one{
+    width: 25%;
+}
+
+.footer-container-card-two{
+    width: 50%;
+}
+
+.footer-text-title{
+    font-family: $roboto-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #727FB5;
+}
+
+.footer-text-subtitle a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #727FB5;
+}
+
+.footer-text-subtitle a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}

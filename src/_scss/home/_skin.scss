@@ -131,7 +131,7 @@ body {
 @keyframes animatetopdentroertet { from {opacity: 0; filter: alpha(opacity= 0); -moz-opacity: 0;} to { opacity: 1; filter: alpha(opacity= 100); -moz-opacity: 1; } }
 
 .home-container-industriales{
-  width: 100%;
+  width: 1200px;
   height: 810px;
   background-color: #F5FBFF;
   padding: 0px 60px;
@@ -157,31 +157,41 @@ body {
   height: 340px;
   display: grid;
   grid-template-areas: 'primero segundo tercero';
-  background-color: #fff;
 }
 
 .home-industriales-primero{
   grid-area: primero;
   height: 100%;
-  padding: 3px 4px 0px 4px;
 }
 
 .home-industriales-segundo{
   grid-area: segundo;
   height: 100%;
-  padding: 3px 4px 0px 4px;
 }
 
 .home-industriales-tercero{
   grid-area: tercero;
   height: 100%;
-  padding: 3px 4px 0px 4px;
 }
 
 .home-industriales-silver{
   width: 100%;
   height: 100%;
   background-color: #EEEAF4;
+  border-top: 3px solid #FFFFFF;
+  border-right: 4px solid #FFFFFF;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 4px solid #FFFFFF;
+}
+
+.home-industriales-silver:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0px;
+  padding: 3px 4px 0px 4px;
+}
+
+.home-industriales-silver:hover .home-industriales-card-title, .home-industriales-silver:hover .home-industriales-card-subtitle{
+  color: #FFFFFF;
 }
 
 .home-industriales {
@@ -211,6 +221,88 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
+}
+
+.home-center-aprendizaje{
+  width: 100%;
+  height: 426px;
+  background-color: #000000;
+}
+
+.home-center-container{
+  width: 1200px;
+  height: auto;
+}
+
+.home-center-col{
+  width: 25%;
+}
+
+.home-aprendizaje-title{
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.home-aprendizaje-card-absolute{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-aprendizaje-inversiones{
+  font-family: $roboto-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9AEEC5;
+  background: #0D051A;
+  border-radius: 30px;
+  padding: 3px 10px;
+}
+
+.home-aprendizaje-title{
+  font-family: $roboto-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.home-line-white{
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+
+.home-width-start{
+  width: 100%;
+  height: 650px;
+}
+
+.home-width-start-absolute{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+.home-start-text-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 64px;
+  color: #120427;
 }
 
 /* ticker */
