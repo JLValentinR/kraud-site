@@ -142,12 +142,16 @@
             <div class="card-body">
               <section class="carousel">
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
                   <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
                     <div class="home-tags-left-adquiere">FEATURED</div>
                     <div class="home-tags-right-adquiere ml-2">New Listening</div>
                   </div>
-                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-irr">9.6 %IRR</div>
                       <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
@@ -155,19 +159,20 @@
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-co">7.6 %CoC</div>
                       <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                    <div class="pl-2 pr-2 mt-3">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
                     </div>
                   </div>
                 </div>
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
                   <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
                     <div class="home-tags-left-adquiere">FEATURED</div>
                     <div class="home-tags-right-adquiere ml-2">New Listening</div>
                   </div>
-                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-irr">9.6 %IRR</div>
                       <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
@@ -175,19 +180,20 @@
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-co">7.6 %CoC</div>
                       <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                    <div class="pl-2 pr-2 mt-3">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
                     </div>
                   </div>
                 </div>
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
                   <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
                     <div class="home-tags-left-adquiere">FEATURED</div>
                     <div class="home-tags-right-adquiere ml-2">New Listening</div>
                   </div>
-                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-irr">9.6 %IRR</div>
                       <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
@@ -195,19 +201,20 @@
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-co">7.6 %CoC</div>
                       <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                    <div class="pl-2 pr-2 mt-3">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
                     </div>
                   </div>
                 </div>
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
                   <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
                     <div class="home-tags-left-adquiere">FEATURED</div>
                     <div class="home-tags-right-adquiere ml-2">New Listening</div>
                   </div>
-                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-irr">9.6 %IRR</div>
                       <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
@@ -215,19 +222,20 @@
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-co">7.6 %CoC</div>
                       <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                    <div class="pl-2 pr-2 mt-3">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
                     </div>
                   </div>
                 </div>
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity" style="background-color: rgba(0, 0, 0, 0.2); z-index: 100;"></div>
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
+                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
                   <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
                     <div class="home-tags-left-adquiere">FEATURED</div>
                     <div class="home-tags-right-adquiere ml-2">New Listening</div>
                   </div>
-                  <div class="position-absolute global-width-100" style="bottom: 40px; z-index: 200;">
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
                     <div class="row m-0 pl-2 pr-2">
                       <div class="position-relative home-tag-irr">9.6 %IRR</div>
                       <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
@@ -236,8 +244,26 @@
                       <div class="position-relative home-tag-co">7.6 %CoC</div>
                       <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
                     </div>
-                    <div class="pl-2 pr-2 mt-3">
+                  </div>
+                </div>
+                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                    <div class="pl-2 pr-2 pb-5 global-width-100">
                       <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                    </div>
+                  </div>
+                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                    <div class="home-tags-left-adquiere">FEATURED</div>
+                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                  </div>
+                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                    </div>
+                    <div class="row m-0 pl-2 pr-2">
+                      <div class="position-relative home-tag-co">7.6 %CoC</div>
+                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
                     </div>
                   </div>
                 </div>
@@ -245,6 +271,104 @@
             </div>
             <div class="row m-0 justify-content-center global-width-100">
               <button class="home-carrusel-button mt-0">Ver propiedades</button>
+            </div>
+          </div>
+        </div>
+        <div class="home-container-invertir position-relative" :style="'background: url(' + ImgInvertir + ') center center/cover no-repeat #204B65;'">
+          <div class="home-container-invertir-opacity"></div>
+          <div class="home-container-invertir-opacity2"></div>
+          <div class="position-relative">
+            <div class="home-industriales-title mb-3 text-center" style="color: #F5FBFF; padding-top: 150px;">¿Qué beneficios obtienes por invertir <br /> en Kraud?</div>
+            <div class="global-width-100">
+              <section class="regulars slider mt-4">
+                <div>
+                  <div>
+                    <img :src="ImgInvertir1" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Amplias tu portafolio de inversión</div>
+                  <div class="home-invertir-subtitle mt-5">Kraud habilita la inversión en bienes raíces industriales. Para invertir en este segmento se necesitaba mucho capital, hoy ya puedes invertir en Naves Industriales que otorgan los mejores rendimientos.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir2" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversión segura</div>
+                  <div class="home-invertir-subtitle mt-5">Los Tokens que adquieras en Kraud demuestran que eres un inversionista de una propiedad, lo que te asegura el pago periódico (rentas) de forma automática.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir3" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Tu inversión crece en el tiempo</div>
+                  <div class="home-invertir-subtitle mt-5">En comparación con otras inversiones que están atadas al mercado, la inversión en bienes raíces industriales tiene (y más ahora) una tendencia de plus valía por si sola.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir4" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversiones sustentables</div>
+                  <div class="home-invertir-subtitle mt-5">El mundo está en un punto de quiebre y la industria es una de las principales causantes del impacto al medio ambiente por lo que las inversiones en Kraud deberán contar con componentes sustentables para que de esta forma pongamos nuestro "granito de arena" fomentando una industria limpia y responsable.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir1" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Amplias tu portafolio de inversión</div>
+                  <div class="home-invertir-subtitle mt-5">Kraud habilita la inversión en bienes raíces industriales. Para invertir en este segmento se necesitaba mucho capital, hoy ya puedes invertir en Naves Industriales que otorgan los mejores rendimientos.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir2" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversión segura</div>
+                  <div class="home-invertir-subtitle mt-5">Los Tokens que adquieras en Kraud demuestran que eres un inversionista de una propiedad, lo que te asegura el pago periódico (rentas) de forma automática.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir3" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Tu inversión crece en el tiempo</div>
+                  <div class="home-invertir-subtitle mt-5">En comparación con otras inversiones que están atadas al mercado, la inversión en bienes raíces industriales tiene (y más ahora) una tendencia de plus valía por si sola.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir4" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversiones sustentables</div>
+                  <div class="home-invertir-subtitle mt-5">El mundo está en un punto de quiebre y la industria es una de las principales causantes del impacto al medio ambiente por lo que las inversiones en Kraud deberán contar con componentes sustentables para que de esta forma pongamos nuestro "granito de arena" fomentando una industria limpia y responsable.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir1" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Amplias tu portafolio de inversión</div>
+                  <div class="home-invertir-subtitle mt-5">Kraud habilita la inversión en bienes raíces industriales. Para invertir en este segmento se necesitaba mucho capital, hoy ya puedes invertir en Naves Industriales que otorgan los mejores rendimientos.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir2" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversión segura</div>
+                  <div class="home-invertir-subtitle mt-5">Los Tokens que adquieras en Kraud demuestran que eres un inversionista de una propiedad, lo que te asegura el pago periódico (rentas) de forma automática.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir3" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Tu inversión crece en el tiempo</div>
+                  <div class="home-invertir-subtitle mt-5">En comparación con otras inversiones que están atadas al mercado, la inversión en bienes raíces industriales tiene (y más ahora) una tendencia de plus valía por si sola.</div>
+                </div>
+                <div>
+                  <div>
+                    <img :src="ImgInvertir4" style="width: 32px;" alt="" />
+                  </div>
+                  <div class="home-invertir-title mt-3">Inversiones sustentables</div>
+                  <div class="home-invertir-subtitle mt-5">El mundo está en un punto de quiebre y la industria es una de las principales causantes del impacto al medio ambiente por lo que las inversiones en Kraud deberán contar con componentes sustentables para que de esta forma pongamos nuestro "granito de arena" fomentando una industria limpia y responsable.</div>
+                </div>
+              </section>
+              <div class="row m-0 justify-content-center global-width-100">
+                <button class="home-carrusel-button mt-5">Ver propiedades</button>
+              </div>
             </div>
           </div>
         </div>
@@ -344,6 +468,11 @@ import Animation2 from '@/assets/home/animation2.png'
 import Animation3 from '@/assets/home/animation3.png'
 import Animation4 from '@/assets/home/animation4.png'
 import Animation5 from '@/assets/home/animation5.png'
+import ImgInvertir from '@/assets/home/img-invertir.jpg'
+import ImgInvertir1 from '@/assets/home/ImgInvertir1.png'
+import ImgInvertir2 from '@/assets/home/ImgInvertir2.png'
+import ImgInvertir3 from '@/assets/home/ImgInvertir3.png'
+import ImgInvertir4 from '@/assets/home/ImgInvertir4.png'
 
 export default {
   name: 'Home',
@@ -377,7 +506,12 @@ export default {
       Animation4: Animation4,
       Animation5: Animation5,
       temporizadorDato: '',
-      counterGraph: 1
+      counterGraph: 1,
+      ImgInvertir: ImgInvertir,
+      ImgInvertir1: ImgInvertir1,
+      ImgInvertir2: ImgInvertir2,
+      ImgInvertir3: ImgInvertir3,
+      ImgInvertir4:ImgInvertir4
     }
   },
   methods: {
@@ -400,7 +534,7 @@ export default {
         } else if (vm.counterGraph === 5) {
           getId('valueGraph').src = vm.Animation5
         }
-      }, 1000)
+      }, 900)
     },
     carruselSelect (value) {
       this.numberCounter = value
@@ -446,10 +580,10 @@ export default {
     $(document).on('ready', function() {
       $('.carousel').slick({
           centerMode: true,
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 2,
           arrows: true,
-          dots: false,
+          dots: true,
           speed: 300,
           infinite: true,
           autoplaySpeed: 3000,
@@ -472,6 +606,12 @@ export default {
               }
             }
           ]
+      });
+      $(".regulars").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
       });
     });
     Gifffer();
