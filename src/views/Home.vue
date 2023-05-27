@@ -138,7 +138,6 @@
         <div class="row m-0 justify-content-center pt-5" style="background-color: #F5FBFF;">
           <div class="home-container-industriales">
             <div class="home-industriales-title mb-3 text-center">Adquiere tu token</div>
-            <img data-gifffer="https://i.pinimg.com/originals/9e/89/be/9e89be7c6a1ea7c56321bb3913272d12.gif" data-gifffer-duration="4000" data-gifffer-width="250" data-gifffer-height="237" />
             <div class="card-body">
               <section class="carousel">
                 <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
@@ -372,6 +371,51 @@
             </div>
           </div>
         </div>
+        <div class="row m-0 align-items-center home-container-funciona-kraud">
+          <div class="global-width-100 position-relative">
+            <div class="home-funciona-back-img">
+              <img :src="valorDeveloper.img" alt="" />
+            </div>
+            <div class="home-absolute-funciona-kraud"></div>
+            <div class="home-funciona-back-right">
+              <div class="row m-0 align-items-center" style="height: 100%;">
+                <div style="height: auto;">
+                  <div class="home-funciona-right-title">Como funciona <br /> <a style="color: #9747FF;"> Kraud </a></div>
+                  <div class="row m-0 home-funciona-options mt-4">
+                    <div @click="changeOption(true)" :class="valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY INVERSIONISTA</div>
+                    <div @click="changeOption(false)" :class="!valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY DESARROLLADOR</div>
+                  </div>
+                  <div v-if="valiteOption" class="row m-0">
+                    <div class="mt-3 pr-5" style="width: calc(100% - 30px);">
+                      <div class="home-funciona-right-title2">{{valorDeveloper.title}}</div>
+                      <div class="home-funciona-right-title3 mt-3">{{valorDeveloper.subtitle}}</div>
+                      <div class="home-funciona-right-title4 mt-3">{{valorDeveloper.description}}</div>
+                    </div>
+                    <div class="home-funciona-one" style="width: 30px;">
+                      <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start' : ''">1</div>
+                      <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center' : ''">2</div>
+                      <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center' : ''">3</div>
+                      <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end' : ''">4</div>
+                    </div>
+                  </div>
+                  <div v-if="!valiteOption" class="row m-0">
+                    <div class="mt-3 pr-5" style="width: calc(100% - 30px);">
+                      <div class="home-funciona-right-title2">{{valorDeveloper.title}}</div>
+                      <div class="home-funciona-right-title3 mt-3">{{valorDeveloper.subtitle}}</div>
+                      <div class="home-funciona-right-title4 mt-3">{{valorDeveloper.description}}</div>
+                    </div>
+                    <div class="home-funciona-one" style="width: 30px;">
+                      <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start' : ''">1</div>
+                      <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center' : ''">2</div>
+                      <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center' : ''">3</div>
+                      <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end' : ''">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row m-0 justify-content-center home-center-aprendizaje">
           <div class="home-center-container p-3">
             <div class="global-width-100" style="height: 50px;">
@@ -473,6 +517,10 @@ import ImgInvertir1 from '@/assets/home/ImgInvertir1.png'
 import ImgInvertir2 from '@/assets/home/ImgInvertir2.png'
 import ImgInvertir3 from '@/assets/home/ImgInvertir3.png'
 import ImgInvertir4 from '@/assets/home/ImgInvertir4.png'
+import Industriales1 from '@/assets/home/industriales1.jpg'
+import Industriales2 from '@/assets/home/industriales2.jpg'
+import Industriales3 from '@/assets/home/industriales3.jpg'
+import Industriales4 from '@/assets/home/industriales4.jpg'
 
 export default {
   name: 'Home',
@@ -511,10 +559,120 @@ export default {
       ImgInvertir1: ImgInvertir1,
       ImgInvertir2: ImgInvertir2,
       ImgInvertir3: ImgInvertir3,
-      ImgInvertir4:ImgInvertir4
+      ImgInvertir4:ImgInvertir4,
+      Industriales1: Industriales1,
+      Industriales2: Industriales2,
+      Industriales3: Industriales3,
+      Industriales4: Industriales4,
+      valiteOption: true,
+      validateSubOption: 0,
+      valorDeveloper: {
+        img: '',
+        title: '',
+        subtitle: '',
+        description: ''
+      },
+      valorInvestorAll: [
+        {
+          img: '',
+          title: 'Paso 1',
+          subtitle: 'Propiedad enviada',
+          description: 'Un desarrollador envía su proyecto para ser sometido a la evaluación de viabilidad de inversión. El desarrollador debe contar con un terreno y cumplir  en forma con todos los requerimientos no solo de posesión sino también de información acerca de su proyecto.'
+        },
+        {
+          img: '',
+          title: 'Paso 2',
+          subtitle: 'Propiedad puesta bajo contrato',
+          description: 'Una vez aprobado el proyecto de desarrollo, estos son procesados legalmente para formar una entidad moral que permita la inclusión de inversionistas en diferentes series de acciones. Al mismo tiempo se hace la oferta de Tokens de seguridad basados en blockchain para demostrar la participación en la inversión ya sea por la cesión del terreno o la aportación de capital. A ti como dueño del terreno se te asignarán Tokens.'
+        },
+        {
+          img: '',
+          title: 'Paso 3',
+          subtitle: 'Recaudación de fondos',
+          description: 'Kraud ayuda a la recaudación de los fondos necesarios para el desarrollo del proyecto a través de inversionistas. Cuando los fondos se recaudan, se inicia la construcción del proyecto. A través de esas entidades legales creadas para cada proyecto, Kraud se asegura que los fondos sean usados adecuadamente. El monto total de inversión incluye un rubro por desocupación.'
+        },
+        {
+          img: '',
+          title: 'Paso 4',
+          subtitle: 'Comercialización de propiedades',
+          description: 'El equipo de Kraud trabaja para conseguir a los arrendatarios para que en cuanto se concluya la construcción la propiedad se ocupe inmediatamente. En este punto, Kraud será encargado de la administración y mantenimiento.'
+        }
+      ],
+      valorDeveloperAll: [
+        {
+          img: '',
+          title: 'Paso 11',
+          subtitle: 'Propiedad enviada',
+          description: 'Un desarrollador envía su proyecto para ser sometido a la evaluación de viabilidad de inversión. El desarrollador debe contar con un terreno y cumplir  en forma con todos los requerimientos no solo de posesión sino también de información acerca de su proyecto.'
+        },
+        {
+          img: '',
+          title: 'Paso 12',
+          subtitle: 'Propiedad puesta bajo contrato',
+          description: 'Una vez aprobado el proyecto de desarrollo, estos son procesados legalmente para formar una entidad moral que permita la inclusión de inversionistas en diferentes series de acciones. Al mismo tiempo se hace la oferta de Tokens de seguridad basados en blockchain para demostrar la participación en la inversión ya sea por la cesión del terreno o la aportación de capital. A ti como dueño del terreno se te asignarán Tokens.'
+        },
+        {
+          img: '',
+          title: 'Paso 13',
+          subtitle: 'Recaudación de fondos',
+          description: 'Kraud ayuda a la recaudación de los fondos necesarios para el desarrollo del proyecto a través de inversionistas. Cuando los fondos se recaudan, se inicia la construcción del proyecto. A través de esas entidades legales creadas para cada proyecto, Kraud se asegura que los fondos sean usados adecuadamente. El monto total de inversión incluye un rubro por desocupación.'
+        },
+        {
+          img: '',
+          title: 'Paso 14',
+          subtitle: 'Comercialización de propiedades',
+          description: 'El equipo de Kraud trabaja para conseguir a los arrendatarios para que en cuanto se concluya la construcción la propiedad se ocupe inmediatamente. En este punto, Kraud será encargado de la administración y mantenimiento.'
+        }
+      ]
     }
   },
   methods: {
+    changeInvestorValue (value) {
+      if (value === 0) {
+        this.valorDeveloper.img = this.Industriales1
+      } else if (value === 1) {
+        this.valorDeveloper.img = this.Industriales2
+      } else if (value === 2) {
+        this.valorDeveloper.img = this.Industriales3
+      } else if (value === 3) {
+        this.valorDeveloper.img = this.Industriales4
+      }
+      this.valorDeveloper.title = this.valorInvestorAll[value].title
+      this.valorDeveloper.subtitle = this.valorInvestorAll[value].subtitle
+      this.valorDeveloper.description = this.valorInvestorAll[value].description
+    },
+    changeDeveloperValue (value) {
+      if (value === 0) {
+        this.valorDeveloper.img = this.Industriales4
+      } else if (value === 1) {
+        this.valorDeveloper.img = this.Industriales3
+      } else if (value === 2) {
+        this.valorDeveloper.img = this.Industriales2
+      } else if (value === 3) {
+        this.valorDeveloper.img = this.Industriales1
+      }
+      this.valorDeveloper.title = this.valorDeveloperAll[value].title
+      this.valorDeveloper.subtitle = this.valorDeveloperAll[value].subtitle
+      this.valorDeveloper.description = this.valorDeveloperAll[value].description
+    },
+    changeSubOption (value) {
+      this.validateSubOption= value
+      if (this.valiteOption) {
+        this.changeInvestorValue(value)
+      } else {
+        this.changeDeveloperValue(value)
+      }
+    },
+    changeOption (value) {
+      this.valiteOption = value
+      if (value) {
+        this.changeSubOption(0)
+        this.changeInvestorValue(0)
+      } else {
+        this.changeSubOption(0)
+        this.changeDeveloperValue(0)
+      }
+    },
     comenzarTemporizador () {
       const vm = this
       this.temporizadorDato = setInterval(function () {
@@ -614,7 +772,7 @@ export default {
         slidesToScroll: 4
       });
     });
-    Gifffer();
+    this.changeInvestorValue(0)
   },
   mounted () {
     this.carrusel()
