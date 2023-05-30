@@ -342,6 +342,7 @@ body {
 	flex: 0 0 auto;
 	z-index: 1000;
 }
+
 .ticker-wrapper-h .heading:after{
 	content: "";
 	position: absolute;
@@ -752,4 +753,8 @@ body {
   bottom: -140px;
   background: linear-gradient(180deg, #120427 -57.69%, rgba(18, 4, 39, 0) 88.1%);
   transform: rotate(-180deg);
+}
+
+.regulars .slick-prev, .slick-next{
+  display: none !important;
 }
