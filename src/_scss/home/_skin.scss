@@ -137,6 +137,13 @@ body {
   padding: 0px 60px;
 }
 
+.home-container-industriales2{
+  width: 100%;
+  height: 550px;
+  background-color: #F5FBFF;
+  padding: 0px 60px;
+}
+
 .home-industriales-img{
   width: 100%;
   height: 545px;
@@ -240,6 +247,15 @@ body {
 }
 
 .home-aprendizaje-title{
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.home-aprendizaje-title2{
   font-family: $primary-font-family;
   font-style: normal;
   font-weight: 600;
@@ -493,8 +509,32 @@ body {
   padding: 5px 0px;
 }
 
-.slick-prev, .slick-next{
-  // display: none !important;
+.carousel .slick-prev, .slick-next{
+  width: 45px;
+  height: 45px;
+  z-index: 1000;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.carousel .slick-prev:hover, .slick-next:hover{
+  background-color: #000000;
+}
+
+.carousel .slick-prev{
+  left: -15px;
+}
+
+.carousel .slick-next{
+  right: -15px;
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before{
+  font-size: 44px;
+  line-height: 50px;
+  color: #FFFFFF;
+  opacity: 1;
+  z-index: 1000;
 }
 
 .home-token-hover:hover{
@@ -502,7 +542,8 @@ body {
 }
 
 .home-token-hover:hover .home-tag-button{
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
 }
 
 .regulars .slick-dots li{
@@ -513,10 +554,10 @@ body {
 }
 
 .regulars .slick-dots .slick-active{
-  width: 20px;
+  width: 50px;
   height: 20px;
   background-color: #9AEEC5 !important;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 .regulars .slick-dots li button::before{
@@ -690,4 +731,25 @@ body {
   color: #9AEEC5 !important;
   background: #120427;
   border-radius: 0px 0px 30px 30px;
+}
+
+.home-container-industriales3{
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  width: 90%;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  border-radius: 18px;
+  padding-bottom: 30px;
+}
+
+.home-opacity-bottom{
+  position: absolute;
+  width: 100%;
+  height: 235.35px;
+  left: 0px;
+  bottom: -140px;
+  background: linear-gradient(180deg, #120427 -57.69%, rgba(18, 4, 39, 0) 88.1%);
+  transform: rotate(-180deg);
 }

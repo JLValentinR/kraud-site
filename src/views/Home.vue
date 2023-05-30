@@ -1,33 +1,38 @@
 <template>
   <home-layout>
     <div class="container-fluid p-0">
-      <header-info></header-info>
-      <div class="position-relative row m-0 align-items-start home-carrusel">
-        <div class="home-carrusel-left mt-5">
-          <div>
-            <img :src="ImgKraudLogo" width="450" alt="" />
-          </div>
-          <div class="home-carrusel-title mt-4">Plataforma de inversión en bienes raíces industriales con componentes sustentables basada en blockchain.</div>
-          <div class="home-carrusel-subtitle mt-4">Invierte desde $1000 MXN</div>
-          <button class="home-carrusel-button">Ver propiedades</button>
-        </div>
-        <div class="row m-0 position-relative justify-content-end home-carrusel-right mt-5" style="z-index: 200;">
-          <div class="home-carrusel-image">
-            <img id="imgCarrusel" :src="SliderImg1" height="550" style="border-radius: 8px 8px 0px 0px;" alt="" />
-            <div class="home-carrusel-opacity"></div>
-          </div>
-          <div class="row m-0 justify-content-end home-carrusel-container-img">
-            <div class="position-relative ml-3 mr-3" @click="carruselSelect(1)">
-              <img :src="SliderImg1" alt="" :style="numberCounter === 1 ? 'border: 6px solid #9AEEC5;' : ''" />
-              <div :class="numberCounter === 1 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+      <div class="position-relative row m-0 align-items-start home-carrusel" style="z-index: 500; margin-top: 80px !important;">
+        <div class="position-relative header-slider-grid">
+          <div class="header-industriales-primero mt-5" style="z-index: 1000;">
+            <div class="header-desktop">
+              <img :src="ImgKraudLogo" width="450" alt="" />
             </div>
-            <div class="position-relative ml-2 mr-2" @click="carruselSelect(2)">
-              <img :src="SliderImg2" alt="" :style="numberCounter === 2 ? 'border: 6px solid #9AEEC5;' : ''" />
-              <div :class="numberCounter === 2 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+            <div class="home-carrusel-title mt-4 position-relative">Plataforma de inversión en bienes raíces industriales con componentes sustentables basada en blockchain.</div>
+            <div class="home-carrusel-subtitle mt-4 position-relative">Invierte desde $1000 MXN</div>
+            <div class="row m-0 global-width-100 home-center-button">
+              <button class="home-carrusel-button" @mouseover="setStyle()" @mouseleave="deleteStyle()" :style="changeStyle">Ver propiedades <img v-if="changeStyle !== ''" :src="Vector10Stroke" /></button>
             </div>
-            <div class="position-relative ml-3 mr-3" @click="carruselSelect(3)">
-              <img :src="SliderImg3" alt="" :style="numberCounter === 3 ? 'border: 6px solid #9AEEC5;' : ''" />
-              <div :class="numberCounter === 3 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+          </div>
+          <div class="position-relative header-industriales-segundo mt-5" style="z-index: 200;">
+            <div class="row m-0 position-relative justify-content-end global-width-100">
+              <div class="home-carrusel-image">
+                <img id="imgCarrusel" :src="SliderImg1" style="border-radius: 8px 8px 0px 0px;" alt="" />
+                <div id="opacitySlider" class="home-carrusel-opacity"></div>
+              </div>
+              <div class="row m-0 justify-content-end home-carrusel-container-img">
+                <div class="position-relative ml-3 mr-3" @click="carruselSelect(1)">
+                  <img :src="SliderImg1" alt="" :style="numberCounter === 1 ? 'border: 6px solid #9AEEC5;' : ''" />
+                  <div :class="numberCounter === 1 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+                </div>
+                <div class="position-relative ml-2 mr-2" @click="carruselSelect(2)">
+                  <img :src="SliderImg2" alt="" :style="numberCounter === 2 ? 'border: 6px solid #9AEEC5;' : ''" />
+                  <div :class="numberCounter === 2 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+                </div>
+                <div class="position-relative ml-3 mr-3" @click="carruselSelect(3)">
+                  <img :src="SliderImg3" alt="" :style="numberCounter === 3 ? 'border: 6px solid #9AEEC5;' : ''" />
+                  <div :class="numberCounter === 3 ? '' : 'home-carrusel-opacity home-carrusel-container-img-normal'"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,29 +111,31 @@
         </div>
         <div class="row m-0 justify-content-center" style="background-color: #F5FBFF;">
           <div class="home-container-industriales">
-            <div class="home-industriales-title mb-3">Inversión segura en desarrollos <br /> industriales sustentables</div>
-            <div class="position-relative">
-              <div class="home-industriales-img" :style="'background: url(' + ImgBackIndustriales + ') center center/cover no-repeat #204B65;'"></div>
-              <div class="position-absolute home-industriales-grid">
-                <div class="home-industriales-primero">
-                  <div class="home-industriales-silver p-5">
-                    <img :src="ImgIndustriales1" width="47" alt="" />
-                    <div class="mt-4 home-industriales-card-title">Examina</div>
-                    <div class="home-industriales-card-subtitle">Visualiza los datos financieros, informes de inspección y más. Todos los documentos de la propiedad están disponibles públicamente.</div>
+            <div style="height: auto;">
+              <div class="home-industriales-title mb-3">Inversión segura en desarrollos <br /> industriales sustentables</div>
+              <div class="position-relative">
+                <div class="home-industriales-img" :style="'background: url(' + ImgBackIndustriales + ') center center/cover no-repeat #204B65;'"></div>
+                <div class="position-absolute home-industriales-grid">
+                  <div class="home-industriales-primero">
+                    <div class="home-industriales-silver p-5">
+                      <img :src="ImgIndustriales1" width="47" alt="" />
+                      <div class="mt-4 home-industriales-card-title">Examina</div>
+                      <div class="home-industriales-card-subtitle">Visualiza los datos financieros, informes de inspección y más. Todos los documentos de la propiedad están disponibles públicamente.</div>
+                    </div>
                   </div>
-                </div>
-                <div class="home-industriales-segundo">
-                  <div class="home-industriales-silver p-5">
-                    <img :src="ImgIndustriales2" width="47" alt="" />
-                    <div class="mt-4 home-industriales-card-title">Selecciona</div>
-                    <div class="home-industriales-card-subtitle">Compra fracciones de propiedades de alquiler y conviértete en propietario directo.</div>
+                  <div class="home-industriales-segundo">
+                    <div class="home-industriales-silver p-5">
+                      <img :src="ImgIndustriales2" width="47" alt="" />
+                      <div class="mt-4 home-industriales-card-title">Selecciona</div>
+                      <div class="home-industriales-card-subtitle">Compra fracciones de propiedades de alquiler y conviértete en propietario directo.</div>
+                    </div>
                   </div>
-                </div>
-                <div class="home-industriales-tercero">
-                  <div class="home-industriales-silver p-5">
-                    <img :src="ImgIndustriales3" width="47" alt="" />
-                    <div class="mt-4 home-industriales-card-title">Gana alquiler y apreciación </div>
-                    <div class="home-industriales-card-subtitle">Obtén pagos de alquiler diarios y cobra la apreciación de la propiedad cuando retires el dinero.</div>
+                  <div class="home-industriales-tercero">
+                    <div class="home-industriales-silver p-5">
+                      <img :src="ImgIndustriales3" width="47" alt="" />
+                      <div class="mt-4 home-industriales-card-title">Gana alquiler y apreciación </div>
+                      <div class="home-industriales-card-subtitle">Obtén pagos de alquiler diarios y cobra la apreciación de la propiedad cuando retires el dinero.</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,141 +143,156 @@
           </div>
         </div>
         <div class="row m-0 justify-content-center pt-5" style="background-color: #F5FBFF;">
-          <div class="home-container-industriales">
-            <div class="home-industriales-title mb-3 text-center">Adquiere tu token</div>
-            <div class="card-body">
-              <section class="carousel">
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+          <div class="position-relative home-container-industriales2">
+            <div class="home-container-industriales3">
+              <div class="home-industriales-title mb-3 text-center">Adquiere tu token</div>
+              <div class="card-body">
+                <section class="carousel">
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall01 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
-                    </div>
-                  </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
-                    </div>
-                  </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall03 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
-                  <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
-                    <div class="pl-2 pr-2 pb-5 global-width-100">
-                      <button class="home-tag-button">Available: 2,149 tokens at $50</button>
-                    </div>
-                  </div>
-                  <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
-                    <div class="home-tags-left-adquiere">FEATURED</div>
-                    <div class="home-tags-right-adquiere ml-2">New Listening</div>
-                  </div>
-                  <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-irr">9.6 %IRR</div>
-                      <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
-                    </div>
-                    <div class="row m-0 pl-2 pr-2">
-                      <div class="position-relative home-tag-co">7.6 %CoC</div>
-                      <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                  <div>
+                    <div class="position-relative" :style="'width: 100%; height: 415px; background: url(' + ImgSmall02 + ') center center/cover no-repeat #204B65; border-radius: 4px;'">
+                      <div class="home-carrusel-opacity home-token-hover row m-0 align-items-end" style="background: linear-gradient(180deg, rgba(13, 5, 26, 0) 0%, #0D051A 100%); z-index: 100;">
+                        <div class="pl-2 pr-2 pb-5 global-width-100">
+                          <button class="home-tag-button">Available: 2,149 tokens at $50</button>
+                        </div>
+                      </div>
+                      <div class="position-absolute row m-0 p-2" style="top: 0px; z-index: 200;">
+                        <div class="home-tags-left-adquiere">FEATURED</div>
+                        <div class="home-tags-right-adquiere ml-2">New Listening</div>
+                      </div>
+                      <div class="position-absolute global-width-100" style="bottom: 100px; z-index: 200;">
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-irr">9.6 %IRR</div>
+                          <div class="home-tag-irr-string pl-4">594 Columbia Ave</div>
+                        </div>
+                        <div class="row m-0 pl-2 pr-2">
+                          <div class="position-relative home-tag-co">7.6 %CoC</div>
+                          <div class="home-tag-co-string pl-4">Akron, OH 44310</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </section>
+                </section>
+              </div>
+              <div class="row m-0 justify-content-center global-width-100">
+                <button class="home-carrusel-button mt-2" @mouseover="setStyle()" @mouseleave="deleteStyle()" :style="changeStyle">Ver marketplace <img v-if="changeStyle !== ''" :src="Vector10Stroke" /></button>
+              </div>
             </div>
-            <div class="row m-0 justify-content-center global-width-100">
-              <button class="home-carrusel-button mt-0">Ver propiedades</button>
-            </div>
+            <div class="home-opacity-bottom header-desktop"></div>
           </div>
         </div>
         <div class="home-container-invertir position-relative" :style="'background: url(' + ImgInvertir + ') center center/cover no-repeat #204B65;'">
@@ -280,36 +302,8 @@
             <div class="home-industriales-title mb-3 text-center" style="color: #F5FBFF; padding-top: 150px;">¿Qué beneficios obtienes por invertir <br /> en Kraud?</div>
             <div class="global-width-100">
               <section class="regulars slider mt-4">
-                <div>
-                  <div>
-                    <img :src="ImgInvertir1" style="width: 32px;" alt="" />
-                  </div>
-                  <div class="home-invertir-title mt-3">Amplias tu portafolio de inversión</div>
-                  <div class="home-invertir-subtitle mt-5">Kraud habilita la inversión en bienes raíces industriales. Para invertir en este segmento se necesitaba mucho capital, hoy ya puedes invertir en Naves Industriales que otorgan los mejores rendimientos.</div>
-                </div>
-                <div>
-                  <div>
-                    <img :src="ImgInvertir2" style="width: 32px;" alt="" />
-                  </div>
-                  <div class="home-invertir-title mt-3">Inversión segura</div>
-                  <div class="home-invertir-subtitle mt-5">Los Tokens que adquieras en Kraud demuestran que eres un inversionista de una propiedad, lo que te asegura el pago periódico (rentas) de forma automática.</div>
-                </div>
-                <div>
-                  <div>
-                    <img :src="ImgInvertir3" style="width: 32px;" alt="" />
-                  </div>
-                  <div class="home-invertir-title mt-3">Tu inversión crece en el tiempo</div>
-                  <div class="home-invertir-subtitle mt-5">En comparación con otras inversiones que están atadas al mercado, la inversión en bienes raíces industriales tiene (y más ahora) una tendencia de plus valía por si sola.</div>
-                </div>
-                <div>
-                  <div>
-                    <img :src="ImgInvertir4" style="width: 32px;" alt="" />
-                  </div>
-                  <div class="home-invertir-title mt-3">Inversiones sustentables</div>
-                  <div class="home-invertir-subtitle mt-5">El mundo está en un punto de quiebre y la industria es una de las principales causantes del impacto al medio ambiente por lo que las inversiones en Kraud deberán contar con componentes sustentables para que de esta forma pongamos nuestro "granito de arena" fomentando una industria limpia y responsable.</div>
-                </div>
-                <div>
-                  <div>
+                <div style="width: 100%; height: 100%;">
+                  <div style="width: 100%; height: 100%;">
                     <img :src="ImgInvertir1" style="width: 32px;" alt="" />
                   </div>
                   <div class="home-invertir-title mt-3">Amplias tu portafolio de inversión</div>
@@ -366,36 +360,50 @@
                 </div>
               </section>
               <div class="row m-0 justify-content-center global-width-100">
-                <button class="home-carrusel-button mt-5">Ver propiedades</button>
+                <button class="home-carrusel-button mt-5" @mouseover="setStyle()" @mouseleave="deleteStyle()" :style="changeStyle">Ver propiedades <img v-if="changeStyle !== ''" :src="Vector10Stroke" /></button>
               </div>
             </div>
           </div>
         </div>
         <div class="row m-0 align-items-center home-container-funciona-kraud">
           <div class="global-width-100 position-relative">
-            <div class="home-funciona-back-img">
+            <div class="home-funciona-right-title header-mobile">Como funciona <br /> <a style="color: #9747FF;"> Kraud </a></div>
+            <div class="position-relative home-funciona-back-img">
               <img :src="valorDeveloper.img" alt="" />
+              <div id="opacitySlider2" class="home-absolute-funciona-kraud header-mobile"></div>
             </div>
-            <div class="home-absolute-funciona-kraud"></div>
+            <div class="home-absolute-funciona-kraud header-desktop"></div>
             <div class="home-funciona-back-right">
               <div class="row m-0 align-items-center" style="height: 100%;">
-                <div style="height: auto;">
-                  <div class="home-funciona-right-title">Como funciona <br /> <a style="color: #9747FF;"> Kraud </a></div>
-                  <div class="row m-0 home-funciona-options mt-4">
-                    <div @click="changeOption(true)" :class="valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY INVERSIONISTA</div>
-                    <div @click="changeOption(false)" :class="!valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY DESARROLLADOR</div>
+                <div class="position-relative" style="height: auto;">
+                  <div class="home-funciona-right-title header-desktop">Como funciona <br /> <a style="color: #9747FF;"> Kraud </a></div>
+                  <div class="row m-0 global-width-100 home-funciona-centers">
+                    <div class="row m-0 home-funciona-options mt-4">
+                      <div @click="changeOption(true)" :class="valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY INVERSIONISTA</div>
+                      <div @click="changeOption(false)" :class="!valiteOption ? 'home-funciona-option1' : 'home-funciona-option2'">SOY DESARROLLADOR</div>
+                    </div>
                   </div>
                   <div v-if="valiteOption" class="row m-0">
-                    <div class="mt-3 pr-5" style="width: calc(100% - 30px);">
+                    <div class="mt-3 pr-5 home-funciona-width-content">
                       <div class="home-funciona-right-title2">{{valorDeveloper.title}}</div>
                       <div class="home-funciona-right-title3 mt-3">{{valorDeveloper.subtitle}}</div>
                       <div class="home-funciona-right-title4 mt-3">{{valorDeveloper.description}}</div>
                     </div>
-                    <div class="home-funciona-one" style="width: 30px;">
+                    <div class="home-funciona-one header-desktop" style="width: 30px;">
                       <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start' : ''">1</div>
                       <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center' : ''">2</div>
                       <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center' : ''">3</div>
                       <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end' : ''">4</div>
+                    </div>
+                    <div class="header-mobile global-width-100 mt-4">
+                      <div class="row m-0 justify-content-center global-width-100">
+                        <div class="row m-0 home-funciona-horizontal">
+                          <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start2' : 'home-funciona-start3'">1</div>
+                          <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center2' : 'home-funciona-start3'">2</div>
+                          <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center2' : 'home-funciona-start3'">3</div>
+                          <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end2' : 'home-funciona-start3'">4</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div v-if="!valiteOption" class="row m-0">
@@ -404,11 +412,21 @@
                       <div class="home-funciona-right-title3 mt-3">{{valorDeveloper.subtitle}}</div>
                       <div class="home-funciona-right-title4 mt-3">{{valorDeveloper.description}}</div>
                     </div>
-                    <div class="home-funciona-one" style="width: 30px;">
+                    <div class="home-funciona-one header-desktop" style="width: 30px;">
                       <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start' : ''">1</div>
                       <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center' : ''">2</div>
                       <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center' : ''">3</div>
                       <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end' : ''">4</div>
+                    </div>
+                    <div class="header-mobile global-width-100 mt-4">
+                      <div class="row m-0 justify-content-center global-width-100">
+                        <div class="row m-0 home-funciona-horizontal">
+                          <div @click="changeSubOption(0)" :class="validateSubOption === 0 ? 'home-funciona-start2' : 'home-funciona-start3'">1</div>
+                          <div @click="changeSubOption(1)" :class="validateSubOption === 1 ? 'home-funciona-center2' : 'home-funciona-start3'">2</div>
+                          <div @click="changeSubOption(2)" :class="validateSubOption === 2 ? 'home-funciona-center2' : 'home-funciona-start3'">3</div>
+                          <div @click="changeSubOption(3)" :class="validateSubOption === 3 ? 'home-funciona-end2' : 'home-funciona-start3'">4</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -416,7 +434,7 @@
             </div>
           </div>
         </div>
-        <div class="row m-0 justify-content-center home-center-aprendizaje">
+        <div class="row m-0 justify-content-center home-center-aprendizaje pt-4">
           <div class="home-center-container p-3">
             <div class="global-width-100" style="height: 50px;">
               <div class="float-left home-aprendizaje-title">Centro de aprendizaje</div>
@@ -433,7 +451,7 @@
                     <div class="home-aprendizaje-inversiones">Inversiones</div>
                   </div>
                 </div>
-                <div class="home-aprendizaje-title p-3">Como funciona Kraud para inversionistas</div>
+                <div class="home-aprendizaje-title2 p-3">Como funciona Kraud para inversionistas</div>
               </div>
               <div class="home-center-col">
                 <div class="position-relative p-3">
@@ -442,7 +460,7 @@
                     <div class="home-aprendizaje-inversiones">Inversiones</div>
                   </div>
                 </div>
-                <div class="home-aprendizaje-title p-3">¿Cómo funciona los impuestos?</div>
+                <div class="home-aprendizaje-title2 p-3">¿Cómo funciona los impuestos?</div>
               </div>
               <div class="home-center-col">
                 <div class="position-relative p-3">
@@ -451,7 +469,7 @@
                     <div class="home-aprendizaje-inversiones">Inversiones</div>
                   </div>
                 </div>
-                <div class="home-aprendizaje-title p-3">¿Qué son los bienes raíces fraccionados?</div>
+                <div class="home-aprendizaje-title2 p-3">¿Qué son los bienes raíces fraccionados?</div>
               </div>
               <div class="home-center-col">
                 <div class="position-relative p-3">
@@ -460,25 +478,26 @@
                     <div class="home-aprendizaje-inversiones">Inversiones</div>
                   </div>
                 </div>
-                <div class="home-aprendizaje-title p-3">¿Cómo comprar propiedades en Kraud?</div>
+                <div class="home-aprendizaje-title2 p-3">¿Cómo comprar propiedades en Kraud?</div>
               </div>
             </div>
           </div>
         </div>
         <div class="position-relative row m-0 align-items-center justify-content-center home-width-start pb-5" :style="'background: url(' + ImgNaves + ') center center/cover no-repeat #204B65;'">
           <div class="home-width-start-absolute row m-0">
-            <div class="global-width-100 pt-5 pb-5">
+            <div class="global-width-100 pt-5 pb-5 header-desktop">
               <img id="valueGraph" :src="Animation1" width="100%" style="max-height: 550px;" alt="" />
             </div>
           </div>
           <div class="position-relative" style="height: auto;">
             <div class="home-start-text-title text-center">¿Listo para <br /> comenzar?</div>
             <div class="row m-0 justify-content-center global-width-100 mt-5 pt-5">
-              <button class="home-carrusel-button mt-5">Comienza a invertir</button>
+              <button class="home-carrusel-button mt-5" @mouseover="setStyle()" @mouseleave="deleteStyle()" :style="changeStyle">Comienza invertir <img v-if="changeStyle !== ''" :src="Vector10Stroke" /></button>
             </div>
           </div>
         </div>
       </div>
+      <header-info></header-info>
       <footer-info></footer-info>
     </div>
   </home-layout>
@@ -517,10 +536,11 @@ import ImgInvertir1 from '@/assets/home/ImgInvertir1.png'
 import ImgInvertir2 from '@/assets/home/ImgInvertir2.png'
 import ImgInvertir3 from '@/assets/home/ImgInvertir3.png'
 import ImgInvertir4 from '@/assets/home/ImgInvertir4.png'
-import Industriales1 from '@/assets/home/industriales1.jpg'
-import Industriales2 from '@/assets/home/industriales2.jpg'
-import Industriales3 from '@/assets/home/industriales3.jpg'
-import Industriales4 from '@/assets/home/industriales4.jpg'
+import Industriales1 from '@/assets/home/industriales1.png'
+import Industriales2 from '@/assets/home/industriales2.png'
+import Industriales3 from '@/assets/home/industriales3.png'
+import Industriales4 from '@/assets/home/industriales4.png'
+import Vector10Stroke from '@/assets/home/Vector10Stroke.png'
 
 export default {
   name: 'Home',
@@ -576,6 +596,32 @@ export default {
         {
           img: '',
           title: 'Paso 1',
+          subtitle: 'Selección de la propiedad',
+          description: 'Todas las propiedades en Kraud son evaluadas para definir su viabilidad. Por lo que cada proyecto contará con la información necesaria no solo para que puedas evaluar la parte financiera y de mercado, sino también verificar todo el sustento legal y de esta forma puedas seleccionar el proyecto que mejor se adecue a tus necesidades de manera segura.'
+        },
+        {
+          img: '',
+          title: 'Paso 2',
+          subtitle: 'Compra de tokens',
+          description: 'Todas las propiedades en Kraud son evaluadas para definir su viabilidad. Por lo que cada proyecto contará con la información necesaria no solo para que puedas evaluar la parte financiera y de mercado, sino también verificar todo el sustento legal y de esta forma puedas seleccionar el proyecto que mejor se adecue a tus necesidades de manera segura.'
+        },
+        {
+          img: '',
+          title: 'Paso 3',
+          subtitle: 'Cuál es tu riesgo',
+          description: 'En cualquier inversión, existe un riesgo asociado. En el caso de las inversiones en Kraud el riesgo esta en la tasa de desocupación (cuando no está rentado el inmueble) y por ende no hayan ingresos. Sin embargo Kraud ha pensado en eso resolviéndolo de dos formas: A) Dentro del monto de inversión existe un fondo de desocupación el cual se irá devengando cuando no exista un arrendatario y B) Kraud cuenta con un equipo dedicado a comercializar las propiedades. Toma en cuenta que mientras está en proceso de construcción obviamente no recibirás renta.'
+        },
+        {
+          img: '',
+          title: 'Paso 4',
+          subtitle: 'Recibe tus rentas',
+          description: 'En el proceso para darte de alta en Kraud te pediremos tus datos bancarios para que en cuanto paguen la renta, a ti se te disperse tu pago correspondiente y proporcional al monto de tu inversión. Comúnmente son pagos mensuales, pero es posible que esta condición cambie dependiendo el proyecto.'
+        }
+      ],
+      valorDeveloperAll: [
+        {
+          img: '',
+          title: 'Paso 1',
           subtitle: 'Propiedad enviada',
           description: 'Un desarrollador envía su proyecto para ser sometido a la evaluación de viabilidad de inversión. El desarrollador debe contar con un terreno y cumplir  en forma con todos los requerimientos no solo de posesión sino también de información acerca de su proyecto.'
         },
@@ -598,35 +644,17 @@ export default {
           description: 'El equipo de Kraud trabaja para conseguir a los arrendatarios para que en cuanto se concluya la construcción la propiedad se ocupe inmediatamente. En este punto, Kraud será encargado de la administración y mantenimiento.'
         }
       ],
-      valorDeveloperAll: [
-        {
-          img: '',
-          title: 'Paso 11',
-          subtitle: 'Propiedad enviada',
-          description: 'Un desarrollador envía su proyecto para ser sometido a la evaluación de viabilidad de inversión. El desarrollador debe contar con un terreno y cumplir  en forma con todos los requerimientos no solo de posesión sino también de información acerca de su proyecto.'
-        },
-        {
-          img: '',
-          title: 'Paso 12',
-          subtitle: 'Propiedad puesta bajo contrato',
-          description: 'Una vez aprobado el proyecto de desarrollo, estos son procesados legalmente para formar una entidad moral que permita la inclusión de inversionistas en diferentes series de acciones. Al mismo tiempo se hace la oferta de Tokens de seguridad basados en blockchain para demostrar la participación en la inversión ya sea por la cesión del terreno o la aportación de capital. A ti como dueño del terreno se te asignarán Tokens.'
-        },
-        {
-          img: '',
-          title: 'Paso 13',
-          subtitle: 'Recaudación de fondos',
-          description: 'Kraud ayuda a la recaudación de los fondos necesarios para el desarrollo del proyecto a través de inversionistas. Cuando los fondos se recaudan, se inicia la construcción del proyecto. A través de esas entidades legales creadas para cada proyecto, Kraud se asegura que los fondos sean usados adecuadamente. El monto total de inversión incluye un rubro por desocupación.'
-        },
-        {
-          img: '',
-          title: 'Paso 14',
-          subtitle: 'Comercialización de propiedades',
-          description: 'El equipo de Kraud trabaja para conseguir a los arrendatarios para que en cuanto se concluya la construcción la propiedad se ocupe inmediatamente. En este punto, Kraud será encargado de la administración y mantenimiento.'
-        }
-      ]
+      Vector10Stroke: Vector10Stroke,
+      changeStyle: ''
     }
   },
   methods: {
+    deleteStyle () {
+      this.changeStyle = ''
+    },
+    setStyle () {
+      this.changeStyle = 'background-color: #0D051A;'
+    },
     changeInvestorValue (value) {
       if (value === 0) {
         this.valorDeveloper.img = this.Industriales1
@@ -744,32 +772,75 @@ export default {
           dots: true,
           speed: 300,
           infinite: true,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 30000,
           autoplay: true,
           responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 1300,
               settings: {
-                arrows: false,
                 centerMode: true,
-                slidesToShow: 3
+                slidesToShow: 3,
+                slidesToScroll: 1
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 1100,
               settings: {
-                arrows: false,
                 centerMode: true,
-                slidesToShow: 1
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
               }
             }
           ]
       });
       $(".regulars").slick({
+        centerMode: false,
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+            {
+              breakpoint: 1100,
+              settings: {
+                centerMode: false,
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
       });
     });
     this.changeInvestorValue(0)

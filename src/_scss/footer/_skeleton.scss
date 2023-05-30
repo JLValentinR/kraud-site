@@ -1,0 +1,298 @@
+.home-funciona-width-content{
+    width: calc(100% - 30px);
+}
+
+/* Movíl */
+
+@media (max-width: 575.98px) {
+    .footer-container-card-one{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container-card-one img{
+        margin: 30px 10px;
+    }
+
+    .footer-container{
+        height: 500px;
+        padding: 0px 15px;
+    }
+
+    .footer-text-subtitle div{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin: 0px !important;
+    }
+
+    .home-line-white{
+        margin-bottom: 20px;
+    }
+
+    .home-funciona-back-img{
+        max-width: 100%;
+    }
+
+    .home-funciona-back-img img{
+        width: 100%;
+    }
+
+    .home-funciona-back-right{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+    }
+
+    .home-container-funciona-kraud{
+        height: 1000px;
+        padding: 0px 15px;
+    }
+
+    #opacitySlider2{
+        border-radius: 0px !important;
+        background: linear-gradient(180deg, rgba(18, 4, 39, 0.5) 0%, #120427 100%);
+    }
+
+    .home-funciona-right-title{
+        line-height: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .home-aprendizaje-title{
+        font-size: 28px;
+    }
+
+    .home-funciona-centers{
+        position: absolute;
+        top: -70px;
+        justify-content: center;
+    }
+
+    .home-funciona-right-title2{
+        font-size: 16px;
+    }
+
+    .home-funciona-right-title3{
+        font-size: 20px;
+    }
+
+    .home-funciona-right-title4{
+        font-size: 16px;
+    }
+
+    .home-funciona-width-content{
+        width: 100%;
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .home-funciona-horizontal{
+        display: flex;
+        width: 240px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.3); 
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .home-funciona-horizontal div{
+        width: 30px;
+        height: 60px;
+        line-height: 60px;
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .home-funciona-start3{
+        width: 60px !important;
+        line-height: 30px !important;
+    }
+
+    .home-funciona-start2{
+        width: 60px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+        border-radius: 30px 0px 0px 30px;
+    }
+      
+    .home-funciona-center2{
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+    }
+      
+    .home-funciona-end2{
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+        border-radius: 0px 3px 30px 00px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 951px) {
+    .footer-container-card-one{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container-card-one img{
+        margin: 30px;
+    }
+
+    .footer-container{
+        height: 500px;
+        padding: 0px 15px;
+    }
+
+    .footer-text-subtitle div{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin: 0px !important;
+    }
+
+    .home-line-white{
+        margin-bottom: 20px;
+    }
+
+    .home-funciona-back-img{
+        max-width: 100%;
+    }
+
+    .home-funciona-back-img img{
+        width: 100%;
+    }
+
+    .home-funciona-back-right{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+    }
+
+    .home-container-funciona-kraud{
+        height: 1000px;
+        padding: 0px 15px;
+    }
+
+    #opacitySlider2{
+        border-radius: 0px !important;
+        background: linear-gradient(180deg, rgba(18, 4, 39, 0.5) 0%, #120427 100%);
+    }
+
+    .home-funciona-right-title{
+        line-height: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .home-aprendizaje-title{
+        font-size: 28px;
+    }
+
+    .home-funciona-centers{
+        position: absolute;
+        top: -70px;
+        justify-content: center;
+    }
+
+    .home-funciona-right-title2{
+        font-size: 16px;
+    }
+
+    .home-funciona-right-title3{
+        font-size: 20px;
+    }
+
+    .home-funciona-right-title4{
+        font-size: 16px;
+    }
+
+    .home-funciona-width-content{
+        width: 100%;
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .home-funciona-horizontal{
+        display: flex;
+        width: 240px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.3); 
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .home-funciona-horizontal div{
+        width: 30px;
+        height: 60px;
+        line-height: 60px;
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .home-funciona-start3{
+        width: 60px !important;
+        line-height: 30px !important;
+    }
+
+    .home-funciona-start2{
+        width: 60px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+        border-radius: 30px 0px 0px 30px;
+    }
+      
+    .home-funciona-center2{
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+    }
+      
+    .home-funciona-end2{
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 30px !important;
+        color: #9AEEC5 !important;
+        background: #120427;
+        border-radius: 0px 3px 30px 00px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-back-ul2 li{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-back-ul2 li{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+}
