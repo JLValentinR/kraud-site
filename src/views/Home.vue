@@ -407,7 +407,7 @@
                     </div>
                   </div>
                   <div v-if="!valiteOption" class="row m-0">
-                    <div class="mt-3 pr-5" style="width: calc(100% - 30px);">
+                    <div class="mt-3 pr-5 home-funciona-width-content">
                       <div class="home-funciona-right-title2">{{valorDeveloper.title}}</div>
                       <div class="home-funciona-right-title3 mt-3">{{valorDeveloper.subtitle}}</div>
                       <div class="home-funciona-right-title4 mt-3">{{valorDeveloper.description}}</div>
