@@ -1,6 +1,6 @@
 <template>
   <home-layout>
-    <div class="footer-container">
+    <div class="footer-container pb-4">
       <div class="row m-0 align-items-start footer-container-cards pt-5">
         <div class="footer-container-card-one">
           <img :src="ImgKraudLogo" alt="" />
@@ -24,7 +24,7 @@
           <img :src="changeImg4" @mouseover="setHoverImg(4)" @mouseleave="deleteOverImg(4)" class="ml-2" alt="" />
         </div>
       </div>
-      <div class="row m-0 justify-content-center footer-text-subtitle mt-5">
+      <div class="row m-0 justify-content-center footer-text-subtitle mt-3">
         <div class="mr-5">
           <a href="#?">Privacy Policy</a>
         </div>
