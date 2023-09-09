@@ -4,10 +4,21 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 919px) {
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 920px) and (max-width: 1199.98px) {
+    .home-tags-left-adquiere, .home-tags-right-adquiere, .home-tag-irr, .home-tag-co, .home-tag-button{
+        font-size: 16px;
+    }
+
+    .home-tag-irr-string{
+        font-size: 13px;
+    }
+
+    .home-tag-co-string{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1550px) {
