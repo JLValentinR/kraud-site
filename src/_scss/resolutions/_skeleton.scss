@@ -10,5 +10,16 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
 }
 
-@media (min-width: 1200px) and (max-width: 1450px) {
+@media (min-width: 1200px) and (max-width: 1550px) {
+    .home-tags-left-adquiere, .home-tags-right-adquiere, .home-tag-irr, .home-tag-co, .home-tag-button{
+        font-size: 16px;
+    }
+
+    .home-tag-irr-string{
+        font-size: 13px;
+    }
+
+    .home-tag-co-string{
+        font-size: 16px;
+    }
 }

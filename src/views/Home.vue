@@ -776,6 +776,14 @@ export default {
           autoplay: true,
           responsive: [
             {
+              breakpoint: 1600,
+              settings: {
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
               breakpoint: 1300,
               settings: {
                 centerMode: true,
